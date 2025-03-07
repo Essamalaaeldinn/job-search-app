@@ -5,7 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start:dev": "SET NODE_ENV=dev&&nodemon"
+    "build": "npm i",
+    "start": "node .",
+    "start-watch": "nodemon ."
+  },
+  "engines": {
+    "node": "20.16.0"
   },
   "keywords": [],
   "author": "",
