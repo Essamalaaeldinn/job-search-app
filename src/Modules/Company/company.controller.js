@@ -7,7 +7,7 @@ import { errorHandlerMiddleware } from "../../Middlewares/errorHandler.middlewar
 import * as companyService from "./Service/company.service.js"; // ✅ Correct import
 import { checkAuthUser } from "../../Middlewares/checkUser.middleware.js";
 import adminRouters from "../Admin/admin.controller.js";
-import { authenticationMiddleware } from "../../middlewares/authentication.middleware.js";
+import { authenticationMiddleware } from "../../Middlewares/authentication.middleware.js";
 import { authorizationMiddleware } from "../../Middlewares/authirization.middleware.js";
 
 const companyRouters = Router();

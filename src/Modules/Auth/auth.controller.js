@@ -3,10 +3,10 @@ import * as auth from "./Services/authentication.service.js";
 import { errorHandlerMiddleware } from "../../Middlewares/errorHandler.middleware.js";
 import { validationMiddleware } from "../../Middlewares/validation.middleware.js";
 import * as validation from "../../Validators/Auth/auth.validator.js";
-import { authenticationMiddleware } from "../../middlewares/authentication.middleware.js";
 import passport from "passport";
 import jwt from "jsonwebtoken";
 import { v4 as uuidv4 } from "uuid";
+import { authenticationMiddleware } from "../../Middlewares/authentication.middleware.js";
 
 const authRouters = Router();
 

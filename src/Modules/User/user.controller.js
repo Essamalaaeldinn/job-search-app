@@ -4,7 +4,7 @@ import * as user from "./Service/user.service.js";
 import { validationMiddleware } from "../../Middlewares/validation.middleware.js";
 import * as validator from "../../Validators/User/user.validators.js";
 import { checkAuthUser } from "../../Middlewares/checkUser.middleware.js";
-import { authenticationMiddleware } from "../../middlewares/authentication.middleware.js";
+import { authenticationMiddleware } from "../../Middlewares/authentication.middleware.js";
 
 const userRouters = Router()
 

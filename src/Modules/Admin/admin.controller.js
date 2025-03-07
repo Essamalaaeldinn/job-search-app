@@ -4,7 +4,7 @@ import { errorHandlerMiddleware } from "../../Middlewares/errorHandler.middlewar
 import { checkAuthUser } from "../../Middlewares/checkUser.middleware.js";
 import { authorizationMiddleware } from "../../Middlewares/authirization.middleware.js";
 import * as admin from "./Service/admin.service.js";
-import { authenticationMiddleware } from "../../middlewares/authentication.middleware.js";
+import { authenticationMiddleware } from "../../Middlewares/authentication.middleware.js";
 
 const adminRouters = Router()
 

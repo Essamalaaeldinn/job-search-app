@@ -2,7 +2,6 @@ import CryptoJS from "crypto-js";
 import bcrypt from "bcrypt";
 
 export const encryption = (text, secretKey) => {
-
   try {
     if (!text || !secretKey)
       throw new Error("Missing text or secret key for encryption.");
@@ -19,8 +18,6 @@ export const decryption = (encryptedText, secretKey) => {
   try {
     if (!encryptedText || !secretKey)
       throw new Error("Missing text or secret key for decryption.");
-
-    console.log("Decryption Inputs:", { encryptedText, secretKey });
 
     const bytes = CryptoJS.AES.decrypt(encryptedText, secretKey);
     const decryptedText = bytes.toString(CryptoJS.enc.Utf8);
